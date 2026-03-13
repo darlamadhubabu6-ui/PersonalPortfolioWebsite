@@ -328,6 +328,11 @@ function FeaturedProjectsGrid() {
       category: 'SaaS Product',
       image: 'https://images.unsplash.com/flagged/photo-1574097656146-0b43b7660cb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjBzY2hvb2wlMjBzdHVkZW50cyUyMGNsYXNzcm9vbXxlbnwxfHx8fDE3NzMzMDgzMTl8MA&ixlib=rb-4.1.0&q=80&w=1080',
     },
+    {
+      title: 'Industrial Safety Ecosystem',
+      category: 'Multi-Brand Platform',
+      image: 'https://images.unsplash.com/photo-1768268004429-e59aeea1b932?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwc2FmZXR5JTIwZXF1aXBtZW50JTIwd29ya2Vyc3xlbnwxfHx8fDE3NzMzNzYxODN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    },
   ];
 
   return (
@@ -370,6 +375,8 @@ function GridProjectCard({ project, index, isInView }: { project: any; index: nu
       navigate('/case-studies/sports-stadium-experience');
     } else if (project.title === 'School ERP') {
       navigate('/case-studies/school-erp');
+    } else if (project.title === 'Industrial Safety Ecosystem') {
+      navigate('/case-studies/industrial-safety-ecosystem');
     }
   };
 
@@ -496,7 +503,7 @@ function ProcessStep({ step, index, isInView }: { step: any; index: number; isIn
       <h4 className="mb-2 text-lg" style={{ fontWeight: 600 }}>
         {step.label}
       </h4>
-      <p className="text-xs text-foreground/60">{step.description}</p>
+      <p className="text-sm text-foreground/60">{step.description}</p>
     </motion.div>
   );
 }

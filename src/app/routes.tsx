@@ -4,6 +4,7 @@ import AutomobilePOS from './case-studies/automobile-pos/AutomobilePOS';
 import AutomobileMobileApp from './case-studies/automobile-mobile-app/AutomobileMobileApp';
 import SportsStadiumExperience from './case-studies/sports-stadium-experience/SportsStadiumExperience';
 import SchoolErpCaseStudy from './case-studies/school-erp/SchoolErpCaseStudy';
+import IndustrialSafetyCaseStudy from './case-studies/industrial-safety/IndustrialSafetyCaseStudy';
 
 export const router = createBrowserRouter([
   {
@@ -25,5 +26,13 @@ export const router = createBrowserRouter([
   {
     path: '/case-studies/school-erp',
     element: <SchoolErpCaseStudy />,
+  },
+  {
+    path: '/case-studies/industrial-safety-ecosystem',
+    element: <IndustrialSafetyCaseStudy />,
+  },
+  {
+    path: '*',
+    element: <Portfolio />,
   },
 ]);

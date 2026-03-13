@@ -139,16 +139,6 @@ function HeroSection({ opacity }: { opacity: any }) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.8 }}
-          className="text-2xl md:text-3xl mb-12 text-white/90"
-          style={{ fontWeight: 300 }}
-        >
-          Courier Pay Out
-        </motion.p>
-
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.9, duration: 0.8 }}
           className="text-xl mb-16 max-w-3xl mx-auto text-white/80"
         >
           Designing a simple and reliable internal payment workflow for retail store operations.
@@ -245,8 +235,8 @@ function ProjectOverview() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-black/10">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1767567469209-662e3a0cb29d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3VyaWVyJTIwcGFja2FnZSUyMGRlbGl2ZXJ5JTIwc2VydmljZXxlbnwxfHx8fDE3NzMxNTEzNDN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Courier delivery service"
+                  src="https://images.unsplash.com/photo-1766637885444-2148f623d822?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdXRvJTIwcmVwYWlyJTIwc2hvcCUyMGJ1aWxkaW5nfGVufDF8fHx8MTc3MzMyMTU0NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  alt="Automobile retail storefront"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -487,21 +477,6 @@ function UserResearch() {
             </div>
           </div>
 
-          {/* Research Chart Visual */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.5, duration: 0.6 }}
-            className="mt-16"
-          >
-            <div className="aspect-video rounded-2xl overflow-hidden border border-black/10">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1759661966728-4a02e3c6ed91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwdmlzdWFsaXphdGlvbiUyMGNoYXJ0JTIwYW5hbHl0aWNzfGVufDF8fHx8MTc3MzE1MTM0NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Research data visualization"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </section>
@@ -1637,18 +1612,6 @@ function UsabilityTesting() {
             ))}
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            className="aspect-video rounded-2xl overflow-hidden border border-white/10"
-          >
-            <ImageWithFallback
-              src="https://images.unsplash.com/photo-1759661966728-4a02e3c6ed91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwdmlzdWFsaXphdGlvbiUyMGNoYXJ0JTIwYW5hbHl0aWNzfGVufDF8fHx8MTc3MzE1MTM0NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-              alt="Usability testing results"
-              className="w-full h-full object-cover opacity-60"
-            />
-          </motion.div>
         </motion.div>
       </div>
     </section>

@@ -26,6 +26,9 @@ import garageScreen from 'figma:asset/efb43ce06e813543ae60715a8b75fe52c6bd0217.p
 import appointmentsScreen from 'figma:asset/6014fea62b7ee5b5d0e15fba68c821bdee608791.png';
 import profileScreen from 'figma:asset/79b49ec182f60f472868ebb5707db22dff23b741.png';
 
+// About Section Image
+import americasTrustedTireImage from 'figma:asset/e7c74c1150c992afc92ff39c3c7b070652574297.png';
+
 // Appointment Flow Images
 import appointmentsList from 'figma:asset/9d5ceb1eda3bf667379be277bb38673c44851e62.png';
 import installationStatus from 'figma:asset/2465a2e52e09496ec57e8fc92531b4fcb009e0ab.png';
@@ -244,9 +247,9 @@ function CompanyOverview() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-20 rounded-3xl overflow-hidden"
         >
-          <ImageWithFallback
-            src="https://images.unsplash.com/photo-1702146713870-8cdd7ab983fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBtYWludGVuYW5jZSUyMG1lY2hhbmljJTIwd29ya3Nob3B8ZW58MXx8fHwxNzczMTU2MzU3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Tire technicians working in service bay"
+          <img
+            src={americasTrustedTireImage}
+            alt="America's Trusted Tire Retailer"
             className="w-full h-[500px] object-cover"
           />
         </motion.div>
@@ -1311,20 +1314,6 @@ function DesignSystemSection() {
           </div>
         </div>
 
-        {/* Design System Hero Image */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-20 rounded-3xl overflow-hidden shadow-2xl"
-        >
-          <ImageWithFallback
-            src="https://images.unsplash.com/photo-1769149068959-b11392164add?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXNpZ24lMjBzeXN0ZW0lMjBjb21wb25lbnRzfGVufDF8fHx8MTc3MzEyMzg1MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Design system components"
-            className="w-full h-[500px] object-cover"
-          />
-        </motion.div>
-
         {/* Color Palette */}
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-black text-center mb-12">Color Palette</h3>
@@ -2298,20 +2287,6 @@ function UsabilityTesting() {
             ))}
           </div>
         </div>
-
-        {/* Testing Hero Image */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="mb-16 rounded-3xl overflow-hidden shadow-2xl"
-        >
-          <ImageWithFallback
-            src="https://images.unsplash.com/photo-1738152878182-869a3fc9e220?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwdGVzdGluZyUyMGZlZWRiYWNrfGVufDF8fHx8MTc3MzE1NzAxMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="User testing feedback session"
-            className="w-full h-[500px] object-cover"
-          />
-        </motion.div>
 
         {/* Key Insights */}
         <div className="mb-16">

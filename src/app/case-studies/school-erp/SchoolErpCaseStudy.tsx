@@ -16,7 +16,7 @@ import { ParentMobileApp } from './ParentMobileApp-FIXED';
 import { InformationArchitectureSection } from './InformationArchitectureSection';
 
 // School ERP Case Study Component - Fully Responsive (Mobile/Tablet/Desktop)
-// Updated: March 12, 2026 - Added responsive breakpoints across all sections
+// Updated: March 12, 2026 - Fixed imports and added Context image
 export default function SchoolErpCaseStudy() {
   const navigate = useNavigate();
   const { scrollYProgress } = useScroll();
@@ -241,8 +241,8 @@ function ContextSection() {
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-3xl blur-2xl" />
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1558092535-648ec3c50158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBtYW5hZ2VtZW50JTIwZGFzaGJvYXJkJTIwaW50ZXJmYWNlfGVufDF8fHx8MTc3MzI5NzEyMnww&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="School Management Dashboard"
+                src="https://images.unsplash.com/photo-1709290749293-c6152a187b14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjBzY2hvb2wlMjBjbGFzc3Jvb20lMjBtYW5hZ2VtZW50fGVufDF8fHx8MTc3MzMyMjU1MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                alt="School Management Context"
                 className="w-full h-auto"
               />
             </div>
