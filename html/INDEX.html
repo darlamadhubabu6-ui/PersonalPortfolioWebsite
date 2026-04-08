@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DARLA Portfolio - HTML Version - Complete File Index</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 2rem;
+      color: #1d1d1f;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 1.5rem;
+      padding: 3rem;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      color: #666;
+      margin-bottom: 3rem;
+      font-weight: 400;
+    }
+
+    .hero-link {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      font-size: 1.125rem;
+      margin-bottom: 3rem;
+      transition: transform 0.2s;
+    }
+
+    .hero-link:hover {
+      transform: scale(1.05);
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      color: #1d1d1f;
+      border-bottom: 3px solid #667eea;
+      padding-bottom: 0.5rem;
+    }
+
+    .file-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .file-card {
+      background: linear-gradient(135deg, #f5f5f7 0%, #ffffff 100%);
+      border: 2px solid #e5e5e5;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      transition: all 0.3s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .file-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+      border-color: #667eea;
+    }
+
+    .file-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .file-name {
+      font-weight: 600;
+      font-size: 1.125rem;
+      margin-bottom: 0.5rem;
+      color: #1d1d1f;
+    }
+
+    .file-desc {
+      font-size: 0.875rem;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .stat-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .stat-label {
+      font-size: 0.875rem;
+      opacity: 0.9;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin-top: 1rem;
+    }
+
+    .feature-list li {
+      padding: 0.75rem;
+      margin-bottom: 0.5rem;
+      background: #f5f5f7;
+      border-radius: 0.5rem;
+      border-left: 4px solid #667eea;
+    }
+
+    .feature-list li::before {
+      content: '✓ ';
+      color: #667eea;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 2px solid #e5e5e5;
+      text-align: center;
+      color: #666;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background: #667eea;
+      color: white;
+      border-radius: 1rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-left: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+
+      .container {
+        padding: 1.5rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .file-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 DARLA Portfolio</h1>
+    <p class="subtitle">Complete HTML Version - All Case Studies & Pages</p>
+
+    <a href="index.html" class="hero-link">🚀 Open Portfolio Homepage →</a>
+
+    <!-- Statistics -->
+    <div class="section">
+      <h2>📊 Statistics</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">6</div>
+          <div class="stat-label">Total Pages</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">5</div>
+          <div class="stat-label">Case Studies</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">412KB</div>
+          <div class="stat-label">Total Size</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">100%</div>
+          <div class="stat-label">Complete</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Portfolio Page -->
+    <div class="section">
+      <h2>🏠 Main Portfolio</h2>
+      <div class="file-grid">
+        <a href="index.html" class="file-card">
+          <div class="file-icon">🏠</div>
+          <div class="file-name">index.html <span class="badge">Main</span></div>
+          <div class="file-desc">
+            Complete portfolio homepage with hero section, 5 project cards, design process, 
+            skills showcase, about section, testimonials, contact form, and full dark/light mode support.
+            <br><br>
+            <strong>Size:</strong> 28KB
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Case Studies -->
+    <div class="section">
+      <h2>📚 Case Studies</h2>
+      <div class="file-grid">
+        <a href="case-studies/automobile-pos.html" class="file-card">
+          <div class="file-icon">🚗</div>
+          <div class="file-name">Automobile POS</div>
+          <div class="file-desc">
+            Complete voucher management system case study with business problem analysis, 
+            user research, information architecture, task flows, design system, and final UI designs.
+            <br><br>
+            <strong>Size:</strong> 96KB | <strong>Sections:</strong> 15+
+          </div>
+        </a>
+
+        <a href="case-studies/automobile-mobile-app.html" class="file-card">
+          <div class="file-icon">📱</div>
+          <div class="file-name">Automobile Mobile App</div>
+          <div class="file-desc">
+            iOS mobile application case study featuring user personas, journey mapping, 
+            product opportunity analysis, and comprehensive screen galleries with 23+ UI screens.
+            <br><br>
+            <strong>Size:</strong> 47KB | <strong>Sections:</strong> 14+
+          </div>
+        </a>
+
+        <a href="case-studies/sports-stadium-experience.html" class="file-card">
+          <div class="file-icon">🏟️</div>
+          <div class="file-name">Sports Stadium Experience</div>
+          <div class="file-desc">
+            Innovative stadium app feature with detailed user personas, journey mapping, 
+            6 core features, invite friends flow, and match prediction functionality.
+            <br><br>
+            <strong>Size:</strong> 81KB | <strong>Sections:</strong> 12+
+          </div>
+        </a>
+
+        <a href="case-studies/school-erp.html" class="file-card">
+          <div class="file-icon">🎓</div>
+          <div class="file-name">School ERP</div>
+          <div class="file-desc">
+            Comprehensive educational management system with market analysis, competitive research, 
+            3 user personas, journey mapping for teachers and parents, AI opportunities, and impact metrics.
+            <br><br>
+            <strong>Size:</strong> 69KB | <strong>Sections:</strong> 10+
+          </div>
+        </a>
+
+        <a href="case-studies/industrial-safety-ecosystem.html" class="file-card">
+          <div class="file-icon">🏭</div>
+          <div class="file-name">Industrial Safety Ecosystem</div>
+          <div class="file-desc">
+            Multi-brand safety platform unifying 4 distinct brands (Justrite, Eagle, Checkers, NoTrax) 
+            with comprehensive UX analysis, problem statements, and solution architecture.
+            <br><br>
+            <strong>Size:</strong> 47KB | <strong>Sections:</strong> 8+
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Core Assets -->
+    <div class="section">
+      <h2>🎨 Core Assets</h2>
+      <div class="file-grid">
+        <div class="file-card" style="cursor: default;">
+          <div class="file-icon">💅</div>
+          <div class="file-name">styles.css</div>
+          <div class="file-desc">
+            Complete stylesheet with all animations, responsive breakpoints, dark/light mode styles,
+            navigation, sections, cards, forms, modals, and case study specific styles.
+            <br><br>
+            <strong>Size:</strong> 36KB | <strong>Lines:</strong> 1,500+
+          </div>
+        </div>
+
+        <div class="file-card" style="cursor: default;">
+          <div class="file-icon">⚡</div>
+          <div class="file-name">main.js</div>
+          <div class="file-desc">
+            All JavaScript functionality including theme management, navigation, scroll effects, 
+            animations, mobile menu, forms, modals, and performance optimizations.
+            <br><br>
+            <strong>Size:</strong> 11KB | <strong>Lines:</strong> 400+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Features -->
+    <div class="section">
+      <h2>✨ Key Features</h2>
+      <ul class="feature-list">
+        <li>100% Pure HTML/CSS/JavaScript - No React, No build tools, No dependencies</li>
+        <li>Complete dark/light mode toggle with localStorage persistence</li>
+        <li>Fully responsive design - Mobile, Tablet, Desktop optimized</li>
+        <li>Smooth scroll animations with Intersection Observer</li>
+        <li>Progress bars tracking scroll position on all pages</li>
+        <li>Parallax effects and gradient animations</li>
+        <li>Interactive forms with modals (Contact & Testimonial)</li>
+        <li>Mobile hamburger menu with smooth transitions</li>
+        <li>All navigation links work correctly</li>
+        <li>Back buttons navigate to homepage #work section</li>
+        <li>Optimized performance (~60fps animations)</li>
+        <li>Cross-browser compatible (Chrome, Firefox, Safari, Edge)</li>
+      </ul>
+    </div>
+
+    <!-- How to Use -->
+    <div class="section">
+      <h2>🚀 How to Use</h2>
+      <ul class="feature-list">
+        <li>Option 1: Simply open index.html in your web browser</li>
+        <li>Option 2: Use a local server for best experience (python -m http.server 8000)</li>
+        <li>Option 3: Deploy to any static hosting (Netlify, Vercel, GitHub Pages)</li>
+        <li>All pages are interconnected with proper navigation</li>
+        <li>Theme preference is saved automatically</li>
+        <li>Works offline once loaded (except external images)</li>
+      </ul>
+    </div>
+
+    <!-- Technical Details -->
+    <div class="section">
+      <h2>⚙️ Technical Details</h2>
+      <div class="file-grid">
+        <div class="file-card" style="cursor: default; background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);">
+          <div class="file-icon" style="background: #2196F3;">📦</div>
+          <div class="file-name">No Dependencies</div>
+          <div class="file-desc">
+            Zero external libraries or frameworks. All functionality built with vanilla JavaScript, 
+            CSS, and HTML. No npm, no webpack, no compilation step required.
+          </div>
+        </div>
+
+        <div class="file-card" style="cursor: default; background: linear-gradient(135deg, #f3e5f5 0%, #ffffff 100%);">
+          <div class="file-icon" style="background: #9C27B0;">🎨</div>
+          <div class="file-name">CSS Animations</div>
+          <div class="file-desc">
+            All Framer Motion animations converted to CSS @keyframes. Includes fadeIn, fadeInUp, 
+            fadeInLeft, scaleIn, bounce, gradientShift, and more.
+          </div>
+        </div>
+
+        <div class="file-card" style="cursor: default; background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%);">
+          <div class="file-icon" style="background: #FF9800;">⚡</div>
+          <div class="file-name">Performance</div>
+          <div class="file-desc">
+            Optimized with Intersection Observer for lazy animations, throttled scroll events, 
+            CSS transforms for smooth 60fps animations, and minimal repaints.
+          </div>
+        </div>
+
+        <div class="file-card" style="cursor: default; background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%);">
+          <div class="file-icon" style="background: #4CAF50;">📱</div>
+          <div class="file-name">Responsive</div>
+          <div class="file-desc">
+            Mobile-first design with fluid typography using clamp(), flexible grids with CSS Grid, 
+            and breakpoints at 640px, 768px, and 1024px.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p><strong>DARLA Portfolio</strong> - Complete HTML Version</p>
+      <p>© 2026 All Rights Reserved | Created with ❤️ and pure web technologies</p>
+      <p style="margin-top: 1rem; font-size: 0.875rem;">
+        <a href="README.md" style="color: #667eea; text-decoration: none;">📖 Read Full Documentation</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
